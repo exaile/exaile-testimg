@@ -10,5 +10,3 @@ RUN true \
     python-mox3 \
     make \
   && rm -rf /var/lib/apt/lists/*
-  
-ENTRYPOINT []
