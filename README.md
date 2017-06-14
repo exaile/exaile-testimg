@@ -1,4 +1,4 @@
 exaile-testimg
 ==============
 
-Simple docker image used for testing Exaile on Travis-CI
+Simple docker images used for testing Exaile on Travis-CI
