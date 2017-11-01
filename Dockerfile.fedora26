@@ -1,10 +1,10 @@
 
-FROM docker.io/exaile/gst-python:fedora25
+FROM docker.io/exaile/gst-python:fedora26
 MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
 
 RUN true \
   && dnf -y install \
-    python-pytest \
-    python-mox3 \
+    python2-pytest \
+    python2-mox3 \
     make \
   && dnf clean all
