@@ -6,5 +6,6 @@ RUN true \
   && dnf -y install \
     python2-pytest \
     python2-mox3 \
+    python2-sphinx \
     make \
   && dnf clean all
