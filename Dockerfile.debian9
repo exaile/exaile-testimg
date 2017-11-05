@@ -8,5 +8,6 @@ RUN true \
   && apt-get install -y --no-install-recommends \
     python-pytest \
     python-mox3 \
+    python-sphinx \
     make \
   && rm -rf /var/lib/apt/lists/*
