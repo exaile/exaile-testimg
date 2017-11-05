@@ -7,5 +7,6 @@ RUN true \
     python2-pytest \
     python2-mox3 \
     python2-sphinx \
+    findutils \
     make \
   && dnf clean all
