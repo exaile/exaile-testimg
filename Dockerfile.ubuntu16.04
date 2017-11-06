@@ -8,6 +8,9 @@ RUN true \
   && apt-get install -y --no-install-recommends \
     python-pytest \
     python-mox3 \
-    python-sphinx \
+    python-pip \
+    python-setuptools \
     make \
-  && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* \
+  && pip install -U pip setuptools \
+  && pip install sphinx
