@@ -6,7 +6,8 @@ RUN true \
   && dnf -y install \
     python2-pytest \
     python2-mox3 \
-    python2-sphinx \
+    python2-pip \
     findutils \
     make \
-  && dnf clean all
+  && dnf clean all \
+  && pip install sphinx
