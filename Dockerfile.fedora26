@@ -11,4 +11,5 @@ RUN true \
     make \
   && dnf clean all
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT []
+CMD ["/bin/bash"]
