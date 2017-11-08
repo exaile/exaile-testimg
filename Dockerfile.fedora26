@@ -10,3 +10,5 @@ RUN true \
     findutils \
     make \
   && dnf clean all
+
+ENTRYPOINT ["/bin/bash"]
