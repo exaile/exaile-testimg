@@ -15,5 +15,3 @@ RUN true \
   && pip install -U pip setuptools \
   && pip install sphinx
 
-ENTRYPOINT []
-CMD ["/bin/bash"]
