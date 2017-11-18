@@ -1,5 +1,5 @@
 
-FROM docker.io/exaile/gst-python:ubuntu17.04
+FROM docker.io/exaile/gst-python:ubuntu17.10
 MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
 
 RUN true \
