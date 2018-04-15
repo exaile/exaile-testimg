@@ -11,5 +11,6 @@ RUN true \
     python-pip \
     make \
   && rm -rf /var/lib/apt/lists/* \
-  && pip install -U pip \
-  && pip install sphinx sphinx-rtd-theme
+  && pip install -U pip
+
+RUN pip install sphinx sphinx-rtd-theme

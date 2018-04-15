@@ -13,6 +13,7 @@ RUN true \
     python-wheel \
     make \
   && rm -rf /var/lib/apt/lists/* \
-  && pip install -U pip setuptools wheel \
-  && pip install sphinx sphinx-rtd-theme
+  && pip install -U pip setuptools wheel
+
+RUN pip install sphinx sphinx-rtd-theme
 
