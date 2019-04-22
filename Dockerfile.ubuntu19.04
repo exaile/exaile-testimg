@@ -1,5 +1,5 @@
 
-FROM docker.io/exaile/gst-python:debian8
+FROM docker.io/exaile/gst-python:ubuntu19.04
 MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
 
 RUN true \
@@ -9,8 +9,10 @@ RUN true \
     python-pytest \
     python-mox3 \
     python-pip \
+    python-setuptools \
+    python-wheel \
     make \
   && rm -rf /var/lib/apt/lists/* \
-  && pip install -U pip
+  && pip install -U pip setuptools wheel
 
 RUN pip install sphinx sphinx-rtd-theme

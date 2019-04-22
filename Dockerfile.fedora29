@@ -1,5 +1,5 @@
 
-FROM docker.io/exaile/gst-python:fedora27
+FROM docker.io/exaile/gst-python:fedora29
 MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
 
 RUN true \
@@ -10,4 +10,3 @@ RUN true \
     findutils \
     make \
   && dnf clean all
-
