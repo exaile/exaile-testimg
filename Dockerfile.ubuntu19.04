@@ -16,3 +16,4 @@ RUN true \
   && pip install -U pip setuptools wheel
 
 RUN pip install sphinx sphinx-rtd-theme
+

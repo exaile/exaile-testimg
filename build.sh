@@ -9,3 +9,4 @@ for i in ${TOBUILD}; do
     echo "Building $BASE:$i"
     docker build --rm -t $BASE:$i -f Dockerfile.$i .
 done
+
