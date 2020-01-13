@@ -1,0 +1,20 @@
+
+FROM docker.io/exaile/gst-python:ubuntu18.04-python3
+MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
+
+RUN true \
+  && export DEBIAN_FRONTEND=noninteractive \
+  && apt-get update \
+  && apt-get install -y --no-install-recommends \
+    python3-pytest \
+    python3-mox3 \
+    python3-pip \
+    make \
+    curl \
+    ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade setuptools wheel
+RUN pip3 install sphinx sphinx-rtd-theme
+
