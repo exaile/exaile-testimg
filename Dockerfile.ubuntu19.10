@@ -1,5 +1,5 @@
 
-FROM docker.io/exaile/gst-python:ubuntu19.04
+FROM docker.io/exaile/gst-python:ubuntu19.10
 MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
 
 RUN true \
@@ -7,7 +7,6 @@ RUN true \
   && apt-get update \
   && apt-get install -y --no-install-recommends \
     python-pytest \
-    python-mox3 \
     make \
     curl \
     ca-certificates \
@@ -17,5 +16,5 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
   && python get-pip.py
 
 RUN pip install setuptools wheel
-RUN pip install sphinx sphinx-rtd-theme
+RUN pip install sphinx sphinx-rtd-theme mox3
 
