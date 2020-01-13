@@ -1,13 +1,14 @@
 
-FROM docker.io/exaile/gst-python:fedora29
+FROM docker.io/exaile/gst-python:fedora31
 MAINTAINER Dustin Spicuzza <dustin@virtualroadside.com>
 
 RUN true \
   && dnf -y install \
     python2-pytest \
-    python2-mox3 \
-    python2-sphinx \
+    python2-pip \
     findutils \
     make \
   && dnf clean all
+
+RUN pip2 install sphinx mox3
 
