@@ -10,7 +10,7 @@ RUN true \
     make \
   && dnf clean all
 
-RUN pip2 install sphinx mox3
+RUN pip2 install sphinx mox3 sphinx-rtd-theme
 
 RUN ln --symbolic /usr/bin/py.test-2 /usr/bin/py.test
 
